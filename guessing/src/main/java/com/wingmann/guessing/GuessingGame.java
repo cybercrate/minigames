@@ -10,6 +10,7 @@ public class GuessingGame {
 
         final var min = 1;
         final var max = 100;
+
         var secretNumber = new Random().nextInt(min, max);
         var counter = 0;
         var guess = 0;
@@ -19,9 +20,9 @@ public class GuessingGame {
             System.out.print("[input]: ");
 
             try {
-                guess = scanner.nextInt();
-            } catch (InputMismatchException ex) {
-                System.err.println("[error]: your input is incorrect");
+                guess = Integer.parseInt(scanner.nextLine());
+            } catch (NumberFormatException e) {
+                System.err.println("[error]: input is incorrect");
                 continue;
             }
 
