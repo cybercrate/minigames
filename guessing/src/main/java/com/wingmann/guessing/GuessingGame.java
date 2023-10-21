@@ -1,17 +1,16 @@
 package com.wingmann.guessing;
 
-import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
 public class GuessingGame {
+    private static final int MIN = 1;
+    private static final int MAX = 100;
+
     public void play() {
         System.out.println("Guess the number!");
 
-        final var min = 1;
-        final var max = 100;
-
-        var secretNumber = new Random().nextInt(min, max);
+        var secretNumber = new Random().nextInt(MIN, MAX);
         var counter = 0;
         var guess = 0;
         var scanner = new Scanner(System.in);
@@ -26,7 +25,7 @@ public class GuessingGame {
                 continue;
             }
 
-            if ((guess < min) || (guess > max)) {
+            if ((guess < MIN) || (guess > MAX)) {
                 System.out.println("[i]: the secret number is between 1 and 100");
                 continue;
             }
