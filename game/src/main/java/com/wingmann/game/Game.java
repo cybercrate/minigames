@@ -1,4 +1,4 @@
-package com.wingmann.guessing;
+package com.wingmann.game;
 
 public interface Game {
     void play();
