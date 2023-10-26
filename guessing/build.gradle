@@ -22,6 +22,7 @@ repositories {
 
 dependencies {
     implementation 'com.google.guava:guava:32.1.1-jre'
+    implementation project(path: ':game')
 }
 
 jar {

@@ -4,4 +4,5 @@ plugins {
 }
 
 rootProject.name = 'minigames'
-include('guessing')
+include(':game')
+include(':guessing')
