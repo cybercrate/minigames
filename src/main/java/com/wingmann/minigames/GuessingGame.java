@@ -1,6 +1,4 @@
-package com.wingmann.guessing;
-
-import com.wingmann.game.Game;
+package com.wingmann.minigames;
 
 import java.util.Random;
 import java.util.Scanner;

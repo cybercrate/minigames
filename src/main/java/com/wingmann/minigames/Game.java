@@ -1,4 +1,4 @@
-package com.wingmann.game;
+package com.wingmann.minigames;
 
 public interface Game {
     void play();
